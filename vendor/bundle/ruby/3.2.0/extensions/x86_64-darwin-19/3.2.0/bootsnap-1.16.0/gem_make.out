@@ -1,0 +1,18 @@
+current directory: /Users/ssk/Desktop/BudgetApp/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/ssk/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/ssk/Desktop/BudgetApp/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230718-1097-v5ctb0 sitelibdir\=./.gem.20230718-1097-v5ctb0 clean
+
+current directory: /Users/ssk/Desktop/BudgetApp/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230718-1097-v5ctb0 sitelibdir\=./.gem.20230718-1097-v5ctb0
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/ssk/Desktop/BudgetApp/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230718-1097-v5ctb0 sitelibdir\=./.gem.20230718-1097-v5ctb0 install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20230718-1097-v5ctb0/bootsnap
+
+current directory: /Users/ssk/Desktop/BudgetApp/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230718-1097-v5ctb0 sitelibdir\=./.gem.20230718-1097-v5ctb0 clean
