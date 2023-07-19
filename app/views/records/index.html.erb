@@ -1,0 +1,32 @@
+<div class="navbar">
+  <label for="navbar-toggle" class="navbarlabel">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <h2>Transactions for <%= @category.name %></h2>
+ <%= link_to categories_path do %>
+    <i class="fas fa-arrow-left"></i>
+    <span class="sr-only">Back</span>
+  <% end %>
+</div>
+
+<main class="main">
+  <p>Total Amount: <%= number_to_currency(@total_amount) %></p>
+
+  <ul class="record_list">
+    <% @records.each do |record| %>
+      <li>
+        <div class="record_card">
+          <div class="record_info">
+            <p><%= record.name %></p>
+            <p><%= number_to_currency(record.amount) %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+  <div class="add_transaction">
+  <%= link_to "Add a new transaction", new_category_record_path(@category), class: "add_transaction_btn" %>
+  </div>
+</main>

@@ -1,0 +1,28 @@
+<div class="navbar">
+  <label for="navbar-toggle" class="navbarlabel">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div>
+    <h2>Categories</h2>
+  </div>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+</div>
+
+<main class="main" >
+  <% @categories.each do |category| %>
+    <div class="category-card">
+      <div class="category-info">
+        <img src="<%= category.icon %>" alt="Category Icon" class="category_icon">
+        <div class="category_details">
+          <h2><%= category.name %></h2>
+          <p>Total Amount: <%= number_to_currency(category.records.sum(:amount)) %></p>
+        </div>
+      </div>
+        <%= link_to 'View Transactions', category_records_path(category), class: 'btn btn-primary' %>
+    </div>
+<% end %>
+  <div class="add_transaction">
+    <%= link_to "Add a New Category", new_category_path, class: "add_transaction_btn" %>
+</main>
