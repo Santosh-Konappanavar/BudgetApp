@@ -97,8 +97,8 @@
 }
 
 .add_transaction {
-  position:fixed;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0;
   left: 10px;
   right: 10px;
   height: 40px;
@@ -134,7 +134,6 @@
   font-weight: bold;
 }
 
-
 .form_container input[type="text"],
 .form_container input[type="number"] {
   width: 100%;
@@ -143,7 +142,6 @@
   padding: 8px;
   border-radius: 4px;
 }
-
 
 .form_container .btn-primary {
   background-color: #3778c2;
