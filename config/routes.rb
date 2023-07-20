@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  resources :categories, only: %i[index new create] do
+  resources :categories do
     resources :records, only: %i[index new create]
   end
 end

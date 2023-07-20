@@ -11,18 +11,22 @@
 </div>
 
 <main class="main" >
-  <% @categories.each do |category| %>
-    <div class="category-card">
-      <div class="category-info">
-        <img src="<%= category.icon %>" alt="Category Icon" class="category_icon">
-        <div class="category_details">
-          <h2><%= category.name %></h2>
-          <p>Total Amount: <%= number_to_currency(category.records.sum(:amount)) %></p>
-        </div>
+<% @categories.each do |category| %>
+  <div class="category-card">
+    <div class="category-info">
+      <img src="<%= category.icon %>" alt="Category Icon" class="category_icon">
+      <div class="category_details">
+        <h2><%= category.name %></h2>
+        <p>Total Amount: <%= number_to_currency(category.records.sum(:amount)) %></p>
       </div>
-        <%= link_to 'View Transactions', category_records_path(category), class: 'btn btn-primary' %>
     </div>
+    <%= link_to 'View Transactions', category_records_path(category), class: 'btn btn-primary' %>
+    <%= link_to 'Delete', category, method: :delete, data: { confirm: 'Are you sure you want to delete this category?' }, class: 'btn btn-danger' %>
+  </div>
 <% end %>
-  <div class="add_transaction">
-    <%= link_to "Add a New Category", new_category_path, class: "add_transaction_btn" %>
+
+<div class="add_transaction">
+  <%= link_to "Add a New Category", new_category_path, class: "add_transaction_btn" %>
+</div>
+
 </main>

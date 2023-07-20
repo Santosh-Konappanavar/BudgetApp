@@ -2,18 +2,18 @@ class RecordsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @category = Category.find(params[:category_id])
+    @category = current_user.categories.find(params[:category_id])
     @records = @category.records.order(created_at: :desc)
     @total_amount = @category.records.sum(:amount)
   end
 
   def new
-    @category = Category.find(params[:category_id])
+    @category = current_user.categories.find(params[:category_id])
     @record = @category.records.build
   end
 
   def create
-    @category = Category.find(params[:category_id])
+    @category = current_user.categories.find(params[:category_id])
     @record = @category.records.build(record_params)
     @record.author = current_user
 

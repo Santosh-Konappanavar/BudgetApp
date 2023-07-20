@@ -125,7 +125,7 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 8%;
-  padding: 20px;
+  padding: 60px 0;
 }
 
 .form_container label {
@@ -136,7 +136,7 @@
 
 .form_container input[type="text"],
 .form_container input[type="number"] {
-  width: 100%;
+  width: 98.5%;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   padding: 8px;
@@ -205,4 +205,97 @@
   color: #434b54;
   text-align: center;
   text-decoration: none;
+}
+
+.btn-danger {
+  background-color: #3778c2;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px;
+}
+
+.category-card > .btn-danger {
+  float: right;
+  margin-top: -3px;
+}
+
+.navbar-form > .btn-primary {
+  float: right;
+}
+
+#record_category_ids {
+  width: 100px;
+  outline: none;
+}
+
+.delete-card {
+  display: flex;
+  margin: 3rem 0;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  justify-content: center;
+}
+
+.notice,
+.alert {
+  color: red;
+  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .splash_btn {
+    margin: auto;
+  }
+
+  .new_user {
+    margin-top: 30%;
+    align-items: center;
+  }
+
+  .navbarlabel > span {
+    margin-top: 4px;
+    border-width: 1px;
+  }
+
+  /* Main content styles */
+  .main {
+    margin: 35% 8%;
+  }
+
+  .main > .record_list {
+    margin-left: -35px;
+  }
+
+  .add_transaction a {
+    white-space: nowrap;
+  }
+
+  .form_container {
+    margin-top: 30%;
+  }
+
+  /* Record card styles */
+  .record_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .record_info > p {
+    margin-bottom: 5px;
+  }
+
+  /* Centering text in the navbar */
+  .navbar > div {
+    text-align: center;
+  }
+
+  /* Adjusting buttons in the navbar */
+  .navbar a,
+  .navbtn {
+    margin-top: 10px;
+  }
 }

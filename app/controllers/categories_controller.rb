@@ -1,8 +1,14 @@
 class CategoriesController < ApplicationController
   before_action :authenticate_user!
+  before_action :authenticate_user!, except: %i[new create]
+  before_action :authenticate_user!, except: [:show]
 
   def index
-    @categories = Category.all
+    @categories = current_user.categories
+  end
+
+  def show
+    @category = Category.find(params[:id])
   end
 
   def new
@@ -17,6 +23,12 @@ class CategoriesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @category = Category.find(params[:id])
+    @category.destroy
+    redirect_to categories_path, notice: 'Category was successfully deleted.'
   end
 
   private
