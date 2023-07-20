@@ -70,15 +70,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
-- Upadating soon...
+- [Live Demo](https://budgetapp-jdfn.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📺 Presentation <a name="presentation"></a>
 
-- [Link to video presentation]()
-- updating soon...
+- [Link to video presentation](https://www.loom.com/share/250d349f6aa4406e9617c95b9d28b54d?sid=8be5a5c1-126a-4340-b561-73b321c09915)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,6 +208,6 @@ If you like this project, kindly give me a ⭐️
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](https://github.com/Santosh-Konappanavar/BudgetApp/blob/development/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

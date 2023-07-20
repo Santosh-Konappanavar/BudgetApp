@@ -1,15 +1,301 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.navbar {
+  background-color: #3778c2;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbtn {
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 9px 17px;
+}
+
+.navbarlabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarlabel > span {
+  width: 38px;
+  margin-top: 8px;
+  border: 1.5px solid white;
+}
+
+.li_links {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbtn:hover {
+  background-color: #0056b3;
+}
+
+.new_user {
+  margin-top: 7.5%;
+}
+
+.new_user > div > input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+}
+
+.forgot {
+  margin-top: 10px;
+}
+
+.main {
+  margin: 8% 8%;
+}
+
+.btn-primary {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.category-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+}
+
+.category_icon {
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.category_details {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.category_details > p {
+  text-align: right;
+}
+
+.add_transaction {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 40px;
+  background-color: #5fb523;
+  padding: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.add_transaction_btn {
+  padding: 8px 14rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.form_container {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 8%;
+  padding: 60px 0;
+}
+
+.form_container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form_container input[type="text"],
+.form_container input[type="number"] {
+  width: 98.5%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.form_container .btn-primary {
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.record_list {
+  list-style-type: none;
+}
+
+.record_card {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.record_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.splash_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #434b54;
+  text-align: center;
+}
+
+.splash_btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  width: 95vw;
+}
+
+.splash_btn1 {
+  background-color: #3778c2;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.splash_btn2 {
+  color: #434b54;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-danger {
+  background-color: #3778c2;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px;
+}
+
+.category-card > .btn-danger {
+  float: right;
+  margin-top: -3px;
+}
+
+.navbar-form > .btn-primary {
+  float: right;
+}
+
+#record_category_ids {
+  width: 100px;
+  outline: none;
+}
+
+.delete-card {
+  display: flex;
+  margin: 3rem 0;
+  align-items: center;
+  gap: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  justify-content: center;
+}
+
+.notice,
+.alert {
+  color: red;
+  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .splash_btn {
+    margin: auto;
+  }
+
+  .new_user {
+    margin-top: 30%;
+    align-items: center;
+  }
+
+  .navbarlabel > span {
+    margin-top: 4px;
+    border-width: 1px;
+  }
+
+  /* Main content styles */
+  .main {
+    margin: 35% 8%;
+  }
+
+  .main > .record_list {
+    margin-left: -35px;
+  }
+
+  .add_transaction a {
+    white-space: nowrap;
+  }
+
+  .form_container {
+    margin-top: 30%;
+  }
+
+  /* Record card styles */
+  .record_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .record_info > p {
+    margin-bottom: 5px;
+  }
+
+  /* Centering text in the navbar */
+  .navbar > div {
+    text-align: center;
+  }
+
+  /* Adjusting buttons in the navbar */
+  .navbar a,
+  .navbtn {
+    margin-top: 10px;
+  }
+}
